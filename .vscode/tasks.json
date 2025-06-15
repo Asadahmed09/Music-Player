@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build SFML App",
+			"type": "shell",
+			"command": "g++",
+			"args": [
+				"-IC:/Users/DELL/Desktop/Asad Ahmed/Documents/SFML-MusicPlayer/include",
+				"main.cpp",
+				"-LC:/Users/DELL/Desktop/Asad Ahmed/Documents/SFML-MusicPlayer/lib",
+				"-lsfml-graphics",
+				"-lsfml-window",
+				"-lsfml-system",
+				"-lsfml-audio",
+				"-o",
+				"MusicPlayer.exe"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": []
+		}
+	]
+}
